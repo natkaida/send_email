@@ -1,14 +1,15 @@
 # Отправка емейлов из Django через SMTP Yandex
 
 ## Настройки settings.py
-RECIPIENT_ADDRESS = 'youremail@gmail.com' - емейл, на который вы хотите получать сообщения. Можно перечислить несколько в виде списка.
-EMAIL_HOST = 'smtp.yandex.ru'
-EMAIL_PORT = 465
-EMAIL_USE_SSL = True
-DEFAULT_FROM_EMAIL = 'youremail@yandex.ru' - емейл, который будет указан в поле "От кого".
-EMAIL_HOST_USER = 'youremail@yandex.ru' - ваш емейл на Яндексе. Как правило, идентичен предыдущему пункту. 
-EMAIL_HOST_PASSWORD = 'yourownpassword' - пароль ПРИЛОЖЕНИЯ, который нужно создать в настройках Яндекса заранее. **Это не пароль от вашего емейла!**
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+- RECIPIENT_ADDRESS = 'youremail@gmail.com' - емейл, на который вы хотите получать сообщения. Можно перечислить несколько в виде списка.
+- EMAIL_HOST = 'smtp.yandex.ru'
+- EMAIL_PORT = 465
+- EMAIL_USE_SSL = True
+- DEFAULT_FROM_EMAIL = 'youremail@yandex.ru' - емейл, который будет указан в поле "От кого".
+- EMAIL_HOST_USER = 'youremail@yandex.ru' - ваш емейл на Яндексе. Как правило, идентичен предыдущему пункту. 
+- EMAIL_HOST_PASSWORD = 'yourownpassword' - пароль ПРИЛОЖЕНИЯ, который нужно создать в настройках Яндекса заранее. **Это не пароль от вашего емейла!**
+- EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 ## Настройки аккаунта на Яндексе
 
