@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="d-flex align-items-center justify-content-center" style="height:100vh;">
+<div class="card text-center">
+  <div class="card-header text-success">
+    Сообщение успешно отправлено!
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Мы ответим в ближайшее время.</h5>
+    <p class="card-text"> Есть другие вопросы? Напишите еще одно сообщение.</p>
+    <a href="{% url 'yandex:contact' %}" class="btn btn-primary">Написать</a>
+  </div>
+</div>
+</div>
+{% endblock %}

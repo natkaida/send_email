@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+<div class="mx-auto my-3 text-center">
+    <h2>Напишите нам сообщение</h2>
+</div>
+<div class="container">
+	<div class="row align-items-stretch justify-content-center no-gutters">
+		<div class="col-md-7">
+			<div class="form-control mb-3 mt-3 shadow">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form | crispy }}
+        <div class="text-center">
+    <button class="btn btn-primary my-3" type="submit">Отправить</button>
+</div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
